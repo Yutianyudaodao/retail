@@ -1,0 +1,205 @@
+@import './library';
+
+.animated {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+// 淡入效果=========开始===================
+.fadeInFast {
+    animation: fadeIn .3s ease;
+}
+.fadeInSlow {
+    animation: fadeIn .5s ease;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+// 淡入效果=========开始===================
+
+// 淡出效果=========开始===================
+.fadeOut {
+    animation: fadeOut .05s ease;
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+// 淡出效果=========开始===================
+
+// loading效果=========开始===================
+@-webkit-keyframes Loading {
+    0%{
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    100%{
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+@keyframes Loading {
+    0%{
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    100%{
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+// loading效果=========结束===================
+
+
+// 从底部进入=========开始===================
+@-webkit-keyframes appearFromBottom {
+    0% {
+        display: none;
+        transform: translate(0, 10px) scale(0.8);
+        opacity: 0;
+    }
+    25% {
+        transform: translate(0, 5px) scale(0.9);
+        opacity: .3;
+    }
+    50% {
+        transform: translate(0, 0px) scale(0.9);
+        opacity: .5;
+    }
+    75% {
+        transform: translate(0, -10px) scale(0.9);
+        opacity: .7;
+    }
+    100% {
+        display: block;
+        transform: translate(0, 0) scale(1);
+        background-color: $color-mask-51-9;
+        opacity: 1;
+    }
+}
+@keyframes appearFromBottom {
+    0% {
+        display: none;
+        transform: translate(0, 10px) scale(0.6);
+        opacity: 0;
+    }
+    25% {
+        transform: translate(0, 5px) scale(0.7);
+        opacity: .3;
+    }
+    50% {
+        transform: translate(0, 0px) scale(0.8);
+        opacity: .5;
+    }
+    75% {
+        transform: translate(0, -10px) scale(0.9);
+        opacity: .7;
+    }
+    100% {
+        display: block;
+        transform: translate(0, 0) scale(1);
+        background-color: $color-mask-51-9;
+        opacity: 1;
+    }
+}
+// 从底部进入=========结束===================
+
+// 从原始向下离开=========开始===================
+@-webkit-keyframes disAppearFromBottom {
+    0% {
+        display: block;
+        transform: translate(0, 0px) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(0, 5px) scale(0.8);
+        opacity: .5;
+    }
+    100% {
+        display: none;
+        transform: translate(0, 10PX) scale(.6);
+        background-color: $color-mask-51-9;
+        opacity: 0;
+    }
+}
+@keyframes disAppearFromBottom {
+    0% {
+        display: block;
+        transform: translate(0, 0px) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(0, 5px) scale(0.8);
+        opacity: .5;
+    }
+    100% {
+        display: none;
+        transform: translate(0, 10PX) scale(.6);
+        background-color: $color-mask-51-9;
+        opacity: 0;
+    }
+}
+// 从原始向下离开=========结束===================
+
+
+//缩放，先变小，再变大，再变小==========start=====
+.pulse {
+    animation: pluse .5s ease;
+}
+@-webkit-keyframes pluse {
+    0% {
+        transform: scaleX(1)
+    }
+    40% {
+        transform: scale3d(0.8, 0.8, 0.8)
+    }
+    60% {
+        transform: scale3d(1.3, 1.3, 1.3)
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+@keyframes pluse {
+    0% {
+        transform: scaleX(1)
+    }
+    40% {
+        transform: scale3d(0.8, 0.8, 0.8)
+    }
+    60% {
+        transform: scale3d(1.3, 1.3, 1.3)
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+
+//缩放，先变大，再变小==========end=============

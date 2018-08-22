@@ -1,0 +1,77 @@
+//基础变量
+
+//颜色 纯色
+$theme-color: #59b9d6;
+$bg-color: #eeeeef;
+$btn-color: #43a0ff;
+$color-blue: #2272b2;
+$color-f4: #f4f4f4;
+$color-b5: #b5b5b5;
+$color-e6: #e6e6e6;
+$color-red: #e32700;
+$color-e33: #ec313d;
+$color-e20: #e02200;
+$color-000: #000;
+$color-333: #333;
+$color-666: #666;
+$color-999: #999;
+$color-eee: #eee;
+$color-fff: #fff;
+
+//黑色 透明度
+$color-mask-black-1: rgba(0, 0, 0, .1);
+$color-mask-black-2: rgba(0, 0, 0, .2);
+$color-mask-black-3: rgba(0, 0, 0, .3);
+$color-mask-black-4: rgba(0, 0, 0, .4);
+$color-mask-black-5: rgba(0, 0, 0, .5);
+$color-mask-black-6: rgba(0, 0, 0, .6);
+$color-mask-black-7: rgba(0, 0, 0, .7);
+$color-mask-black-8: rgba(0, 0, 0, .8);
+$color-mask-black-9: rgba(0, 0, 0, .9);
+$color-mask-51-9: rgba(51, 51, 51, .9);
+$color-mask-51-05: rgba(51, 51, 51, .05);
+
+//白色 透明度
+$color-mask-white-1: rgba(255, 255, 255, .1);
+$color-mask-white-2: rgba(255, 255, 255, .2);
+$color-mask-white-3: rgba(255, 255, 255, .3);
+$color-mask-white-4: rgba(255, 255, 255, .4);
+$color-mask-white-5: rgba(255, 255, 255, .5);
+$color-mask-white-6: rgba(255, 255, 255, .6);
+$color-mask-white-7: rgba(255, 255, 255, .7);
+$color-mask-white-8: rgba(255, 255, 255, .8);
+$color-mask-white-9: rgba(255, 255, 255, .9);
+
+$color-mask-224-9: rgba(224, 34, 0, .9);
+
+//字体大小
+$fz-6: 6px;
+$fz-8: 8px;
+$fz-10: 10px;
+$fz-12: 12px;
+$fz-14: 14px;
+$fz-16: 16px;
+$fz-18: 18px;
+$fz-20: 20px;
+$fz-22: 22px;
+
+//层级:
+/**
+01-20：content 内容
+21-40：navigation 导航
+41-60：mask 遮罩
+61-80：popup 弹窗
+81-100：全局提醒
+ */
+$tier-1: 1;
+
+$tier-21: 21; // 菜单顶部导航
+$tier-22: 22; // 菜单底部公共导航按钮
+$tier-23: 23; // 详情底部加入购物车bar
+$tier-24: 24; // 搜索顶部导航
+$tier-40: 40;
+$tier-41: 41; // 导航浮层 背景
+$tier-50: 50; // 商品详情
+$tier-61: 61; // 平台认证弹窗
+$tier-62: 62; // 分享遮罩
+$tier-81: 81; // 全局Loading
